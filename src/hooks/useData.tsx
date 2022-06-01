@@ -1,4 +1,4 @@
-import React, {useCallback, useContext, useEffect, useState} from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import Storage from '@react-native-async-storage/async-storage';
 
 import {
@@ -17,11 +17,11 @@ import {
   CATEGORIES,
   ARTICLES,
 } from '../constants/mocks';
-import {light} from '../constants';
+import { light } from '../constants';
 
 export const DataContext = React.createContext({});
 
-export const DataProvider = ({children}: {children: React.ReactNode}) => {
+export const DataProvider = ({ children }: { children: React.ReactNode }) => {
   const [isDark, setIsDark] = useState(false);
   const [theme, setTheme] = useState<ITheme>(light);
   const [user, setUser] = useState<IUser>(USERS[0]);
@@ -59,7 +59,7 @@ export const DataProvider = ({children}: {children: React.ReactNode}) => {
     (payload: IUser[]) => {
       // set users / compare if has updated
       if (JSON.stringify(payload) !== JSON.stringify(users)) {
-        setUsers({...users, ...payload});
+        setUsers({ ...users, ...payload });
       }
     },
     [users, setUsers],

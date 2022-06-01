@@ -14,6 +14,7 @@
     "follow": "Follow",
     "followed": "Followed",
     "search": "Search",
+    "whereTo":"Where to?",
     "night": "night",
     "day": "day",
     "booknow": "Book Now",
@@ -49,10 +50,10 @@
     }
   },
   "app": {
-    "name": "Soft UI",
-    "fullname": "Soft UI Kit",
-    "native": "React Native",
-    "link": "creative-tim.com"
+    "name": "Rentamo",
+    "fullname": "Rentamo - Online Booking System",
+    "native": "Online Booking",
+    "link": "rentamobd.com"
   },
   "darkMode": "Dark Mode",
   "screens": {
@@ -66,10 +67,10 @@
     "extra": "Extra - Automotive"
   },
   "navigation": {
-    "home": "Soft UI",
+    "home": "Rentamo",
     "components": "Components",
-    "articles": "Soft UI",
-    "rentals": "Soft UI",
+    "articles": "Rentamo",
+    "rentals": "Rentamo",
     "rental": "Best Deal",
     "booking": "Booking",
     "chat": "Chat",
@@ -89,9 +90,12 @@
     "documentation": "Documentation"
   },
   "home": {
-    "title": "Soft UI",
+    "title": "Rentamo",
     "following": "Following",
-    "trending": "Trending"
+    "trending": "Trending",
+    "apartments": "Apartments",
+    "hotels": "Hotels",
+    "resorts": "Resorts"
   },
   "register": {
     "title": "Welcome",
@@ -105,7 +109,7 @@
     "aboutMe": "About me"
   },
   "pro": {
-    "title": "Soft UI PRO",
+    "title": "Rentamo",
     "alert": "This feature is available in PRO version",
     "components": "• {{count} Components (Buttons, Inputs, Cards, etc)",
     "screens": "• {{count} Screens (Shopping, Notifications, Chat, etc)",

@@ -1,14 +1,17 @@
-import React, {useEffect} from 'react';
-import {Platform, StatusBar} from 'react-native';
-import {useFonts} from 'expo-font';
+import React, { useEffect } from 'react';
+import { Platform, StatusBar } from 'react-native';
+import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
-import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
 import Menu from './Menu';
-import {useData, ThemeProvider, TranslationProvider} from '../hooks';
+import { useData, ThemeProvider, TranslationProvider } from '../hooks';
+import BottomTabNavigation from './TabNavigation';
+import { Home } from '../screens';
+import Main from '../screens/Main';
 
 export default () => {
-  const {isDark, theme, setTheme} = useData();
+  const { isDark, theme, setTheme } = useData();
 
   /* set the status bar based on isDark constant */
   useEffect(() => {
@@ -49,8 +52,8 @@ export default () => {
   return (
     <TranslationProvider>
       <ThemeProvider theme={theme} setTheme={setTheme}>
-        <NavigationContainer theme={navigationTheme}>
-          <Menu />
+        <NavigationContainer theme={navigationTheme}>       
+          <Main />
         </NavigationContainer>
       </ThemeProvider>
     </TranslationProvider>
